@@ -1,0 +1,119 @@
+/* General styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-button {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type="password"] {
+    /* Add a little visibility toggle for password field */
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Hide password by default */
+  input[type="password"]::-webkit-text-security {
+    letter-spacing: 0.1em; /* This helps to prevent the toggle from overlapping the password dots */
+  }
+  
+  /* Show password on hover */
+  .password-toggle:hover {
+    color: #ccc;
+  }
+  
+  /* Remember me and Forget password styles */
+  .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .remember-forget label {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .rem {
+    margin-right: 5px;
+  }
+  
+  .forget-password a {
+    color: #888;
+    text-decoration: none;
+  }
+  
+  /* Login button styles */
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Register link styles */
+  .register-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .register-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
